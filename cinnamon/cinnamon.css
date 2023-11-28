@@ -361,8 +361,7 @@ StScrollBar StButton#hhandle:focus {
  * ===================================================================*/
 
 #panel {
-  background-color: rgb(220,230,248);
-  /* background-color: rgba(0, 0, 0, 0.65); */
+  background-color: rgb(31, 49, 66);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
   outline: 1px rgba(0, 0, 0, 0.95);
   color: #ffffff;
@@ -390,8 +389,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 #panelLeft .applet-box:first-child:active {
-  /* background-color: rgba(255, 255, 255, 0.25); */
-  background-color: rgb(237, 248, 250);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 #panelLeft:ltr {
@@ -1732,7 +1730,7 @@ StScrollBar StButton#hhandle:focus {
 .grouped-window-list-item-box:hover {
   color: #ffffff;
   transition-duration: 100;
-  background-color: rgb(237, 248, 250);
+  background-color: rgb(68, 97, 120);
   border-bottom: 2px solid rgb(12, 116, 203);
 }
 
@@ -1748,9 +1746,8 @@ StScrollBar StButton#hhandle:focus {
 
 .grouped-window-list-item-box:focus {
   color: #ffffff;
-  background-color: rgb(237, 248, 250);
-  border-image: linear-gradient(rgb(12, 116, 203), rgb(12, 116, 203));
-  border-bottom: 2px solid rgb(12, 116, 203);
+  background-color: rgb(68, 97, 120);
+  border-image: url("panel-assets/item-active.svg") 4;
   transition-duration: 100;
 }
 
