@@ -1460,8 +1460,13 @@ StScrollBar StButton#hhandle:focus {
  * ===================================================================*/
 
 .menu-background {
-  background: rgba(20, 20, 20, 0.9);
+  background: rgba(17, 37, 54, 0.9);
+  /* background: rgba(20, 20, 20, 0.9); */
   box-shadow: 1px -1px 4px 1px rgba(1, 1, 1, 0.6);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .menu-favorites-box {
@@ -1498,7 +1503,8 @@ StScrollBar StButton#hhandle:focus {
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .menu-applications-inner-box {
@@ -1616,7 +1622,7 @@ StScrollBar StButton#hhandle:focus {
   padding: 10px 8px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 10pt;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   caret-color: black;
   caret-size: 1px;
   width: 400px;
@@ -1625,8 +1631,8 @@ StScrollBar StButton#hhandle:focus {
 
 #menu-search-entry:focus,
 #menu-search-entry:hover {
-  color: black;
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.3);
   font-weight: normal;
   selected-color: #ffffff;
   selection-background-color: #0f7bd1;
@@ -1634,7 +1640,9 @@ StScrollBar StButton#hhandle:focus {
 
 /* Context menu (at the moment only for favorites) */
 
-.menu-context-menu {}
+.menu-context-menu {
+  background-color: #004D8C;
+}
 
 /* ===================================================================
  * Window list (windowList.js)
@@ -1741,7 +1749,7 @@ StScrollBar StButton#hhandle:focus {
 .grouped-window-list-item-box:checked:hover {
   color: #ffffff;
   transition-duration: 100;
-  border-bottom: 2px solid rgb(12, 116, 203);
+  border-image: url("panel-assets/item-normal.svg") 4;
 }
 
 .grouped-window-list-item-box:focus {
